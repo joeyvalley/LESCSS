@@ -7,10 +7,8 @@ export default function Home() {
   return (
     <div className="landing">
       {showHomepage ? <Homepage /> :
-        <img src="/img/seal.png" alt="LESCSS Seal" className={`seal ${showHomepage ? 'fade' : ''}`} onClick={() => { setShowHomepage(true) }} />
+        <video onClick={() => { setShowHomepage(true) }} src="/video/loop.mp4" autoPlay={true} loop={true} controls={false} muted={true} className='fullscreen'></video>
       }
-
-      <video src="/video/loop.mp4" autoPlay={true} loop={true} controls={false} muted={true} className='fullscreen'></video>
     </div>
   )
 }

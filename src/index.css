@@ -33,13 +33,13 @@
   top: 0;
   left: 0;
   z-index: 0;
+  cursor: not-allowed;
 }
 
 .home-container {
   position: relative;
-  height: calc(100dvh - 16px);
-  width: calc(100dvw - 16px);
-  border: 2px solid black;
+  height: 100dvh;
+  width: 100dvw;
   background: white;
   z-index: 10;
   animation: fadeIn 1s forwards;
